@@ -1,0 +1,50 @@
+{
+  "name": "flightsurety",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "repository": "https://github.com/techbubble/flightsurety",
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test ./test/flightSurety.js",
+    "dapp": "webpack-dev-server --mode development --config webpack.config.dapp.js",
+    "dapp:prod": "webpack --mode production  --config webpack.config.dapp.js",
+    "server": "rm -rf ./build/server && webpack --config webpack.config.server.js"
+  },
+  "author": "Nik Kalyani <nik@kalyani.com> https://www.kalyani.com",
+  "devDependencies": {
+    "bignumber": "1.1.0",
+    "openzeppelin-solidity": "^1.10.0",
+    "truffle": "^4.1.14",
+    "truffle-hdwallet-provider": "^0.0.5",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.14.7",
+    "@babel/preset-env": "^7.15.0",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.5",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "start-server-nestjs-webpack-plugin": "^2.2.5",
+    "stream-http": "^3.2.0",
+    "style-loader": "^3.2.1",
+    "web3": "^1.0.0",
+    "web3-core-requestmanager": "^1.5.2",
+    "webpack-dev-server": "^4.1.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
